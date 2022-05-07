@@ -25,23 +25,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //express home
-app.use('/home',(req,res)=>{
-    res.send('home');
+
+app.post('/login', (req, res) => {
+    res.render('login');
+});
+app.get('/login', (req, res) => {
+    res.render('login.ejs');
 });
 
-//express login
-app.post('/login',(req,res)=>{
-    res.send('login');
-});
-app.get('/login',(req,res)=>{
-    res.send('login');
-});
-//express register
-app.post('/register',(req,res)=>{
+app.post('/register', (req, res) => {
     res.render('register.ejs');
 });
 
-app.get('/register',(req,res)=>{
+app.get('/register', (req, res) => {
     res.render('register.ejs');
 });
 
