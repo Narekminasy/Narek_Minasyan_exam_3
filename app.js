@@ -40,6 +40,7 @@ app.get('/login',(req,res)=>{
 app.post('/register',(req,res)=>{
     res.send('register');
 });
+
 app.get('/register',(req,res)=>{
     res.send('register');
 });
