@@ -38,11 +38,11 @@ app.get('/login',(req,res)=>{
 });
 //express register
 app.post('/register',(req,res)=>{
-    res.send('register');
+    res.render('register.ejs');
 });
 
 app.get('/register',(req,res)=>{
-    res.send('register');
+    res.render('register.ejs');
 });
 
 app.listen(PORT,()=>{
