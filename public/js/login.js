@@ -34,16 +34,16 @@ if (loginForm) {
                 return;
             }
             alert('All ok');
-            // const homeResponse = await fetch('/list', {
+            // const homeResponse = await fetch('/main', {
             //     method: 'GET',
             // });
             //
             // if (homeResponse.ok) {
             //     const html = await homeResponse.text();
             //     document.documentElement.innerHTML = html;
-            //     history.pushState(null, '', '/list');
+            //     history.pushState(null, '', '/main');
             // }
-            window.location.href = '/list';
+            window.location.href = '/main';
         } catch (error) {
             console.error('Login error:', error);
         }

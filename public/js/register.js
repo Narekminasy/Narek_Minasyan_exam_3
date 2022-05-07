@@ -16,6 +16,7 @@ if (registratonForm) {
         console.log('Send data', data);
 
         try {
+            console.log('h');
             const response = await fetch('/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -37,6 +38,7 @@ if (registratonForm) {
                 } else if (result.message) {
                     alert(result.message);
                 }
+                console.log('h');
             } else if (response.ok) {
                 alert('All ok');
                 window.location.href = '/login';
