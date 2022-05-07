@@ -24,9 +24,24 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-//express use
+//express home
 app.use('/home',(req,res)=>{
     res.send('home');
+});
+
+//express login
+app.post('/login',(req,res)=>{
+    res.send('login');
+});
+app.get('/login',(req,res)=>{
+    res.send('login');
+});
+//express register
+app.post('/register',(req,res)=>{
+    res.send('register');
+});
+app.get('/register',(req,res)=>{
+    res.send('register');
 });
 
 app.listen(PORT,()=>{
