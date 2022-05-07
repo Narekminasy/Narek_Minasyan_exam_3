@@ -1,0 +1,40 @@
+{
+  "name": "narek-minasyan-exam3",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/Narekminasy/Narek_Minasyan_exam_3#readme",
+  "bugs": {
+    "url": "https://github.com/Narekminasy/Narek_Minasyan_exam_3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narekminasy/Narek_Minasyan_exam_3.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "crypto-js": "^4.2.0",
+    "debug": "^4.4.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "http-errors": "^2.0.1",
+    "joi": "^18.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "lodash": "^4.18.1",
+    "md5": "^2.3.0",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.22.4",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
