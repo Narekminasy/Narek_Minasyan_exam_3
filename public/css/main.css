@@ -1,0 +1,109 @@
+/* Գլխավոր կոնտեյներ */
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+}
+
+/* Վերնագիր */
+.comments-section h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    text-transform: capitalize;
+}
+
+/* Ֆորմա - կոճակը աջ տանելու համար */
+.comment-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.comment-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Մեկնաբանությունների ցուցակ */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Մեկնաբանությունների միջև հեռավորությունը */
+}
+
+/* Մեկ մեկնաբանության բլոկ */
+.comment-item {
+    display: flex;
+    align-items: flex-start; /* Ավատարը պահում է վերևում */
+    gap: 14px; /* Ավատարի և տեքստի միջև հեռավորությունը */
+    padding: 16px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+/* Ավատար */
+.comment-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0; /* Թույլ չի տալիս, որ ավատարը սեղմվի */
+}
+
+/* Տեքստային բովանդակություն */
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-grow: 1; /* Զբաղեցնում է մնացած ամբողջ տարածքը */
+}
+
+/* Հեղինակ և Ամսաթիվ */
+.comment-author {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Անվան և ամսաթվի միջև հեռավորությունը */
+    font-weight: bold;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+.comment-date {
+    font-weight: normal;
+    color: #868e96;
+    font-size: 0.8rem;
+}
+
+/* Մեկնաբանության տեքստ */
+.comment-text {
+    margin: 0;
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-break: break-word; /* Թույլ չի տալիս երկար տեքստին դուրս գալ սահմաններից */
+}
