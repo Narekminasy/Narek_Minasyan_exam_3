@@ -1,4 +1,5 @@
 import path from 'path'
+import './migrate.js';
 import express from 'express';
 import 'dotenv/config';
 import {fileURLToPath} from "url";

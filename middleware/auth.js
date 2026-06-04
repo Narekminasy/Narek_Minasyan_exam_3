@@ -1,6 +1,7 @@
 import HttpErrors from "http-errors";
 import moment from "moment";
 import jwt from 'jsonwebtoken';
+import Users from "../models/Users.js";
 
 const {
     PASSWORD_SECRET,
@@ -30,7 +31,7 @@ export default  async (req, res, next) => {
         }
         req.userId = decrytData?.userId;
 
-        const user = await findById(req.userId);
+        const user = await Users.findByPk(req.userId);
         if(!user) {
             next(new HttpErrors(401));
             return;
