@@ -1,109 +1,102 @@
-/* Գլխավոր կոնտեյներ */
-.comments-section {
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6f9;
+    color: #333;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    font-family: sans-serif;
+    gap: 15px;
 }
 
-/* Վերնագիր */
-.comments-section h3 {
-    margin: 0 0 20px 0;
-    font-size: 1.25rem;
-    color: #1a1a1a;
-    text-transform: capitalize;
-}
-
-/* Ֆորմա - կոճակը աջ տանելու համար */
-.comment-form {
+header {
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.comment-form button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 5px 0;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
     padding: 10px 20px;
-    font-size: 0.95rem;
-    font-weight: bold;
+    border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background 0.2s;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.2s;
 }
 
-.comment-form button:hover {
-    background-color: #0056b3;
+#logout {
+    background-color: #dc3545;
+    color: white;
 }
 
-/* Մեկնաբանությունների ցուցակ */
-.comments-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* Մեկնաբանությունների միջև հեռավորությունը */
+#logout:hover {
+    background-color: #bd2130;
 }
 
-/* Մեկ մեկնաբանության բլոկ */
-.comment-item {
-    display: flex;
-    align-items: flex-start; /* Ավատարը պահում է վերևում */
-    gap: 14px; /* Ավատարի և տեքստի միջև հեռավորությունը */
-    padding: 16px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border: 1px solid #e9ecef;
-}
-
-/* Ավատար */
-.comment-avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+#sendmessage {
+    align-self: flex-start;
     background-color: #28a745;
-    color: #ffffff;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 1.1rem;
-    flex-shrink: 0; /* Թույլ չի տալիս, որ ավատարը սեղմվի */
+    color: white;
 }
 
-/* Տեքստային բովանդակություն */
-.comment-content {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex-grow: 1; /* Զբաղեցնում է մնացած ամբողջ տարածքը */
+#sendmessage:hover {
+    background-color: #218838;
 }
 
-/* Հեղինակ և Ամսաթիվ */
-.comment-author {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Անվան և ամսաթվի միջև հեռավորությունը */
-    font-weight: bold;
-    color: #333333;
-    font-size: 0.9rem;
-}
-
-.comment-date {
-    font-weight: normal;
-    color: #868e96;
-    font-size: 0.8rem;
-}
-
-/* Մեկնաբանության տեքստ */
-.comment-text {
+#h1One {
     margin: 0;
-    color: #495057;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    word-break: break-word; /* Թույլ չի տալիս երկար տեքստին դուրս գալ սահմաններից */
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+#h1One input {
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+}
+
+#h1One input::placeholder {
+    color: #888;
+}
+
+#h1One button {
+    background-color: #007bff;
+    color: white;
+}
+
+#h1One button:hover {
+    background-color: #0056b3;
 }
