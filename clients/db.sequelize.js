@@ -27,7 +27,7 @@ const sequelize = new Sequelize(
     }
 );
 
-// Test the connection
+// Test connection
 try {
     await sequelize.authenticate();
     console.log('Database connection established successfully.');

@@ -3,8 +3,11 @@ console.log('main');
 const logoutbtn = document.getElementById('logout');
 const sendmessagebtn = document.getElementById('sendmessage');
 const h1Onebtn = document.getElementById('h1One');
+const filmsbtn = document.getElementById('fils');
+const myFilmsbtn = document.getElementById('myFilms');
 
-if(logoutbtn){
+
+if (logoutbtn) {
     logoutbtn.addEventListener('click', (e) => {
         e.preventDefault();
         document.cookie = "usertoken=; Max-Age=0; path=/";
@@ -74,5 +77,16 @@ if (sendmessagebtn) {
         }
     });
 }
+//?
+if (myFilmsbtn) {
+    myFilmsbtn.addEventListener('click', (e) => {
+        alert('not createdd');
+    })
+}
+//?
+if (filmsbtn) {
+    filmsbtn.addEventListener('click', (e) => {
+        alert('not created');
+    })
 
-
+}
