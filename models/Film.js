@@ -1,7 +1,6 @@
 import {DataTypes,Model} from 'sequelize';
 import db from '../clients/db.sequelize.js';
 
-
 class Film extends Model {}
 
 Film.init({

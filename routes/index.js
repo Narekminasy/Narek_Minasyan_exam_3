@@ -4,6 +4,7 @@ import validation from "../middleware/validation.js";
 import schema from "../middleware/schemas/users.schema.js";
 import {controller} from "../controllers/users.js";
 
+
 const indexPages = Router();
 
 indexPages.get("/main", auth, (req, res) => {
