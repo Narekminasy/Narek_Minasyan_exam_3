@@ -10,26 +10,28 @@ Users.init({
         autoIncrement: true,
     },
 
-    username: {
+    name: {
         type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
     },
 
-    password: {
-        type: DataTypes.STRING,
-        allowNull: false,
+    age: {
+        type: DataTypes.INTEGER,
     },
 
     email: {
         type: DataTypes.STRING,
         unique: true,
     },
+
+    password: {
+        type: DataTypes.STRING,
+    },
+
 }, {
     sequelize: db,
     modelName: 'users',
     tableName: 'users',
-    timestamps: true,
+    timestamps: false,
 });
 
 export default Users;
