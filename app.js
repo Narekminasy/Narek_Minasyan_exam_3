@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-const {PORT} = process.env || 4000;
+const {PORT} = process.env || 3000;
 
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
